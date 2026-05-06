@@ -11,7 +11,7 @@ func Hello(name string) (string, error) {
 		return "", errors.New("Nombre vacio")
 
 	}
-	message := fmt.Sprintf("Hola, %v", name)
+	message := fmt.Sprintf(randomFormat(), name)
 	return message, nil
 }
 
